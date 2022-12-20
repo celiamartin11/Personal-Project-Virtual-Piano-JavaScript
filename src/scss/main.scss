@@ -2,5 +2,129 @@
 @import "./layout/header";
 
 body{
-    background-color: grey;
+    background-color: wheat;
+}
+
+header{
+    background-color: black;
+    color: white;
+}
+
+.title{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 21px;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    justify-content: end;
+}
+
+.option{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    background-color: white;
+    color: black;
+    margin-right: 40px;
+    padding: 12px;
+    display: flex;  
+}
+
+
+
+
+.white-key{
+    background-color: $color-white;
+    width: 80px;
+    height: 34vh;
+    border: 1px solid $color-black;
+    position: relative;
+  }
+
+/*.contain{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80vh;
+  padding-top: 50px;
+}
+
+.container{
+  background-color: $color-white;
+  display: flex;
+  height: 34vh;
+  -webkit-box-shadow: 0px 15px 15px 0px rgba(78, 78, 78, 0.75);
+}
+
+.white-key{
+  background-color: $color-white;
+  width: 80px;
+  height: 34vh;
+  border: 1px solid $color-black;
+  position: relative;
+}
+
+.white-key:hover{
+  background-color: $color-light-grey; 
+  border: none;
+}
+
+.black-key1, .black-key2, .black-key3, .black-key4, .black-key5{
+  position: absolute;
+  left: 35.6vw;
+  width: 40px;
+  height: 24vh;
+  background-color: $color-black;
+  color: $color-white;
+  z-index: 1;
+  -webkit-box-shadow: 0px 10px 12px 0px rgba(78, 78, 78, 0.75);
+}
+
+.black-key2{
+  left: 40.8vw;
+}
+
+.black-key3{
+  left: 51.2vw;
+}
+
+.black-key4{
+  left: 56.4vw;
+}
+
+.black-key5{
+  left: 61.7vw;
+}
+
+.black-key1:hover{
+border: none;
+background-color: $color-grey;
+}
+
+.black-key2:hover{
+border: none;
+background-color: $color-grey;
+}
+
+.black-key3:hover{
+border: none;
+background-color: $color-grey;
+}
+
+.black-key4:hover{
+border: none;
+background-color: $color-grey;
+}
+
+.black-key5:hover{
+border: none;
+background-color: $color-grey;
+}
+
+.hands{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 50px;
 }
