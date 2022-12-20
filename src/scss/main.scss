@@ -1,5 +1,5 @@
 @import "./core/variables";
-@import "./layout/header";
+@import "./core/reset";
 
 body{
     background-color: wheat;
@@ -8,11 +8,17 @@ body{
 header{
     background-color: black;
     color: white;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .title{
     font-family: 'Courier New', Courier, monospace;
-    font-size: 21px;
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 50px;
 }
 
 .menu{
@@ -31,6 +37,91 @@ header{
     display: flex;  
 }
 
+.option:hover{
+    box-shadow: 0 0 40px white;
+}
 
+/*MAIN*/
 
+.contain{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.container{
+    display: flex;
+    -webkit-box-shadow: 0px 15px 15px 0px rgba(78, 78, 78, 0.75);
+}
+
+.white-key{
+    background-color: white;
+    width: 4.8vw;
+    height: 34vh;
+    border: 1px solid black;
+    position: relative;
+}
+
+.white-key:hover{
+    background-color: #ccccccc8; 
+    border: none;
+}
+
+.black-key1, .black-key2, .black-key3, .black-key4, .black-key5{
+    position: absolute;
+    left: 36.6vw;
+    width: 2.6vw;
+    height: 24vh;
+    background-color: black;
+    color: white;
+    z-index: 1;
+    -webkit-box-shadow: 0px 10px 12px 0px rgba(78, 78, 78, 0.75);
+}
+
+.black-key2{
+    left: 41.4vw;
+}
+
+.black-key3{
+    left: 51vw;
+}
+
+.black-key4{
+    left: 55.8vw;
+}
+
+.black-key5{
+    left: 60.6vw;
+}
+
+.black-key1:hover{
+  border: none;
+  background-color: grey;
+}
+
+.black-key2:hover{
+  border: none;
+  background-color: grey;
+}
+
+.black-key3:hover{
+  border: none;
+  background-color: grey;
+}
+
+.black-key4:hover{
+  border: none;
+  background-color: grey;
+}
+
+.black-key5:hover{
+  border: none;
+  background-color: grey;
+}
+
+.hands-image{
+    margin-top: 80px;
+    height: 40vh;
+}
