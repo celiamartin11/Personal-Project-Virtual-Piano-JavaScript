@@ -2,7 +2,7 @@
 @import "./core/reset";
 
 body{
-    background-color: wheat;
+    background-color: white;
 }
 
 header{
@@ -41,10 +41,10 @@ header{
     box-shadow: 0 0 40px white;
 }
 
-/*MAIN*/
+/*Piano*/
 
 .contain{
-    margin-top: 50px;
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -71,7 +71,7 @@ header{
 
 .black-key1, .black-key2, .black-key3, .black-key4, .black-key5{
     position: absolute;
-    left: 36.6vw;
+    left: 36.2vw;
     width: 2.6vw;
     height: 24vh;
     background-color: black;
@@ -81,19 +81,19 @@ header{
 }
 
 .black-key2{
-    left: 41.4vw;
+    left: 41vw;
 }
 
 .black-key3{
-    left: 51vw;
+    left: 50.6vw;
 }
 
 .black-key4{
-    left: 55.8vw;
+    left: 55.4vw;
 }
 
 .black-key5{
-    left: 60.6vw;
+    left: 60.2vw;
 }
 
 .black-key1:hover{
@@ -121,7 +121,140 @@ header{
   background-color: grey;
 }
 
+.button-container{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: white;
+    color: black;
+    border-width: 1px;
+    margin-top: 40px;
+    padding: 5px 10px 5px 10px;
+}
+
 .hands-image{
-    margin-top: 80px;
+    margin-top: 5px;
     height: 40vh;
 }
+
+/*Toggle Switch*/
+
+div.btn-container{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    margin-top: 50px;
+}
+
+div.btn-container i{
+    display: inline-block;
+    position: relative;
+    top: -12px;
+    margin: 0 6px 0 4px;
+}
+
+label {
+    font-size: 16px;
+    color: #424242;
+    font-weight: 500;
+}
+
+.btn-color-mode-switch{
+    display: inline-block;
+    margin: 0px;
+    position: relative;
+}
+
+.btn-color-mode-switch > label.btn-color-mode-switch-inner{
+    margin: 0px;
+    width: 150px;
+    height: 34px;
+    background: #E0E0E0;
+    border-radius: 26px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease;
+    display: block;
+}
+
+.btn-color-mode-switch > label.btn-color-mode-switch-inner:before{
+    content: attr(data-on);
+    position: absolute;
+    font-size: 16px;
+    font-weight: 500;
+    top: 7px;
+    right: 20px;
+
+}
+
+.btn-color-mode-switch > label.btn-color-mode-switch-inner:after{
+    content: attr(data-off);
+    width: 80px;
+    height: 21px;
+    background: #fff;
+    border-radius: 26px;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0px 0px 6px -2px #111;
+    padding: 5px 0px;
+}
+
+.btn-color-mode-switch > .alert{
+    display: none;
+    background: #FF9800;
+    border: none;
+    color: #fff;
+}
+
+.btn-color-mode-switch input[type="checkbox"]{
+    cursor: pointer;
+    width: 50px;
+    height: 25px;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    margin: 0px;
+}
+
+.btn-color-mode-switch input[type="checkbox"]:checked + label.btn-color-mode-switch-inner{
+    background: #151515;
+    color: #fff;
+}
+
+.btn-color-mode-switch input[type="checkbox"]:checked + label.btn-color-mode-switch-inner:after{
+    content: attr(data-on);
+    left: 68px;
+    background: #3c3c3c;
+}
+
+.btn-color-mode-switch input[type="checkbox"]:checked + label.btn-color-mode-switch-inner:before{
+    content: attr(data-off);
+    right: auto;
+    left: 12px;
+}
+
+.btn-color-mode-switch input[type="checkbox"]:checked ~ .alert{
+    display: block;
+}
+
+/*Songs*/
+
+.songs{
+    background-color: black;
+    color: white;
+    width: 98vw;
+    height: 100vh;
+    margin-top: 50px;
+}
+
+
+
+
+
+
+
+
