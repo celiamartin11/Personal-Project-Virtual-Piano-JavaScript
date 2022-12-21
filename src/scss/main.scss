@@ -246,7 +246,7 @@ label {
 .songs{
     background-color: black;
     color: white;
-    width: 98vw;
+    width: 98.9vw;
     height: 100vh;
     margin-top: 50px;
 }
@@ -303,18 +303,20 @@ label {
 }
 
 .location-image {
-    line-height: 0;
+    background-color: red;
     overflow: hidden;
-    object-fit: contain;
+    width: 18.9vw;
+    height: 25vh;
 }
   
 .image-song {
     filter: blur(0px);
     transition: filter 0.3s ease-in;
     transform: scale(1.1);
-    width: 18vw;
-    height: 22vh;
-    object-fit: contain;
+    width: 18.9vw;
+    height: 25vh;
+    object-fit: cover;
+    
 }
 
 .image-listing:hover .image-title {
