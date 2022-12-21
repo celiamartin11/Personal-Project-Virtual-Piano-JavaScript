@@ -141,6 +141,31 @@ header{
   background-color: grey;
 }
 
+.black-key6:hover{
+    border: none;
+    background-color: grey;
+  }
+
+.black-key7:hover{
+    border: none;
+    background-color: grey;
+}
+
+.black-key8:hover{
+    border: none;
+    background-color: grey;
+}
+
+.black-key9:hover{
+    border: none;
+    background-color: grey;
+}
+
+.black-key10:hover{
+    border: none;
+    background-color: grey;
+}
+
 .button-container{
     font-family: 'Courier New', Courier, monospace;
     font-size: 15px;
@@ -266,9 +291,8 @@ label {
 .songs{
     background-color: black;
     color: white;
-    width: 9vw;
+    width: 98.9vw;
     height: 100vh;
-    margin-top: 50px;
 }
 
 .title-songs{
@@ -303,6 +327,7 @@ label {
 
 .image-listing {
     position: relative;
+    margin-top: 40px;
 }
 
 .image-title {
