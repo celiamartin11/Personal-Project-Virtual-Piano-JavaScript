@@ -305,6 +305,7 @@ label {
 .location-image {
     line-height: 0;
     overflow: hidden;
+    object-fit: contain;
 }
   
 .image-song {
@@ -312,6 +313,8 @@ label {
     transition: filter 0.3s ease-in;
     transform: scale(1.1);
     width: 18vw;
+    height: 22vh;
+    object-fit: contain;
 }
 
 .image-listing:hover .image-title {
