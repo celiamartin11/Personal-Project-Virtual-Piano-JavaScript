@@ -69,9 +69,9 @@ header{
     border: none;
 }
 
-.black-key1, .black-key2, .black-key3, .black-key4, .black-key5{
+.black-key1, .black-key2, .black-key3, .black-key4, .black-key5, .black-key6, .black-key7, .black-key8, .black-key9, .black-key10{
     position: absolute;
-    left: 8.5vw;
+    left: 19.4vw;
     width: 2.6vw;
     height: 24vh;
     background-color: black;
@@ -81,19 +81,39 @@ header{
 }
 
 .black-key2{
-    left: 13.4vw;
+    left: 24.1vw;
 }
 
 .black-key3{
-    left: 23vw;
+    left: 33.8vw;
 }
 
 .black-key4{
-    left: 27.8vw;
+    left: 38.5vw;
 }
 
 .black-key5{
-    left: 32.5vw;
+    left: 43.3vw;
+}
+
+.black-key6{
+    left: 53vw;
+}
+
+.black-key7{
+    left: 57.8vw;
+}
+
+.black-key8{
+    left: 67.4vw;
+}
+
+.black-key9{
+    left: 72.2vw;
+}
+
+.black-key10{
+    left: 77vw;
 }
 
 .black-key1:hover{
