@@ -1,1 +1,1 @@
-"use strict";console.log(">> Ready :)");
+"use strict";const filterSongsHtml=document.querySelector(".js-filter-songs");

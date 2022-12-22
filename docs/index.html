@@ -1,68 +1,144 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Adalab Web Starter Kit</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./assets/css/main.css" />
-    <link rel="icon" href="./assets/images/favicon.png" />
-  </head>
-
-  <body>
-    <div class="page">
-      <header class="page__header">
-        <img src="./assets/images/logo-adalab.png" alt="Adalab">
-        <h1>Bienvenidos a Adalab</h1>
-      </header>
-
-      <main class="page__main">
-        <h2>Este es el starter kit de Adalab</h2>
-        <p>Lo usamos para aprender:</p>
-        <ul class="main__list">
-          <li>Sass</li>
-          <li>HTML partials</li>
-          <li>Gulp</li>
-          <li>y muchas cosas más</li>
-        </ul>
-        <p>Si quieres saber cúales son las rutas correctas para:</p>
-        <ul class="main__list">
-          <li>
-            una <code class="code">&lt;img /&gt;</code> mira el fichero
-            <code class="code">./src/html/partials/header.html</code>.
-          </li>
-          <li>
-            y para un <code class="code">background-image</code> mira el fichero
-            <code class="code">./src/html/scss/layout/_page.scss</code>.
-          </li>
-        </ul>
-        <p>
-          Si quieres saber cómo usar un partial HTML dentro de otro partial, busca en la carperta
-          <code class="code">./src/html/index.html</code> y
-          <code class="code">./src/html/partials/main.html</code>, y verás cómo estamos creando estos
-          enlaces:
-        </p>
-        <ul class="main__list">
-          <li>
-            <a class="link__adalab" href="https://adalab.es">Adalab</a>
-
-          </li>
-          <li>
-            <a class="" href="./more-info.html">Más info del starter kit</a>
-
-          </li>
-        </ul>
-      </main>
-
-      <footer class="page__footer">
-        <small>
-          &copy; Todos los derechos reservados
-          <a class="link__adalab" href="https://adalab.es">Adalab</a>
-
-        </small>
-      </footer>
-
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Piano Virtual</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/main.css"/>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/570/570549.png"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <header>
+    <h1 class="title">Piano Virtual</h1>
+    <nav>
+      <ul class="menu">
+        <li class="option" href="">Inicio</li>
+        <li class="option" href="">Canciones</li>
+        <li class="option" href="">Tutoriales</li>
+      </ul>
+    </nav>
+  </header>
+  <main class="contain">
+    <div class="container">
+      <button class="white-key">Do</button>
+      <button class="black-key1">Do# Reb</button>
+      <button class="white-key">Re</button>
+      <button class="black-key2">Re# Mib</button>
+      <button class="white-key">Mi</button>
+      <button class="white-key">Fa</button>
+      <button class="black-key3">Fa# Solb</button>
+      <button class="white-key">Sol</button>
+      <button class="black-key4">Sol# Lab</button>
+      <button class="white-key">La</button>
+      <button class="black-key5">La# Sib</button>
+      <button class="white-key">Si</button>
+      <button class="white-key">Do</button>
+      <button class="black-key6">Do# Reb</button>
+      <button class="white-key">Re</button>
+      <button class="black-key7">Re# Mib</button>
+      <button class="white-key">Mi</button>
+      <button class="white-key">Fa</button>
+      <button class="black-key8">Fa# Solb</button>
+      <button class="white-key">Sol</button>
+      <button class="black-key9">Sol# Lab</button>
+      <button class="white-key">La</button>
+      <button class="black-key10">La# Sib</button>
+      <button class="white-key">Si</button>
     </div>
-    <script src="./assets/js/main.js"></script>
-  </body>
+    <div class="btn-container">
+      <i class="fa fa-keyboard-o" aria-hidden="true"></i>
+        <label class="switch btn-color-mode-switch">
+              <input type="checkbox" name="color_mode" id="color_mode" value="1">
+              <label for="color_mode" data-on="Manos" data-off="Teclado" class="btn-color-mode-switch-inner"></label>
+          </label>
+        <i class="fa fa-hand-paper-o" aria-hidden="true"></i>
+    </div>
+    <div>
+      <img class="hands-image" src="./assets/images/hands.png" alt="posición de manos">
+    </div> 
+    <section class="songs">
+      <h2 class="title-songs">Canciones</h2>
+      <form class="form-song">
+        <select class="select-song js-filter-songs">
+          <option>Elige una temática</option>
+          <option>Clásicas</option>
+          <option>Disney</option>
+          <option>Navidad</option>
+        </select>
+      </form>
+      <div class="image-container">
+        <article class="image-listing">
+          <a class="image-title" href="https://youtu.be/c47S6P58bL8" target="_blank">Titanic</a>
+          <div class="location-image">         
+            <a href="#">
+              <img class="image-song" src="https://i.blogs.es/4a9cb1/titanic/840_560.jpeg" alt="Canción de Titanic">
+            </a>
+          </div>
+        </article>
+        <article class="image-listing">
+          <a class="image-title" href="https://youtu.be/X4cHQWeGja0" target="_blank">La vida es bella</a>
+          <div class="location-image">         
+            <a href="#">
+              <img class="image-song" src="https://ievenn.com/wp-content/uploads/la-vida-es-bella-1997-ievenn-1.jpg" alt="Canción de La vida es bella">
+            </a>
+          </div>
+        </article>
+        <article class="image-listing">
+          <a class="image-title" href="https://youtu.be/E5HBML3-FpE" target="_blank">Tiburón</a>
+          <div class="location-image">         
+            <a href="#">
+              <img class="image-song" src="https://1.bp.blogspot.com/-JBw9amjLh0M/XUn_r5yravI/AAAAAAAAIuU/Dd5ATXasOdssX4xdxXSaXDhPOJnjYYBMwCLcBGAs/s1600/Tibur%25C3%25B3n%2B01.jpg" alt="Canción de Tiburón">
+            </a>
+          </div>
+        </article>
+        <article class="image-listing">
+          <a class="image-title" href="https://www.youtube.com/watch?v=j0HvNellCJI" target="_blank">Rocky</a>
+          <div class="location-image">         
+            <a href="#">
+              <img class="image-song" src="https://i0.wp.com/codigoespagueti.com/wp-content/uploads/2020/11/Rocky-Peliculas-Stallone.jpg?fit=1280%2C720&quality=80&ssl=1" alt="Canción de Rocky">
+            </a>
+          </div>
+        </article>    
+        <article class="image-listing">
+          <a class="image-title" href="https://youtu.be/cdM9RLYYW6w" target="_blank">Juego de Tronos</a>
+          <div class="location-image">         
+            <a href="#">
+              <img class="image-song" src="https://ovicio.com.br/wp-content/uploads/2022/11/20221102-ovicio-game-of-thrones-capa.webp" alt="Canción de Juego de Tronos">
+            </a>
+          </div>
+        </article> 
+        <article class="image-listing">
+          <a class="image-title" href="https://youtu.be/cgnl7QsOvc0" target="_blank">Friends</a>
+          <div class="location-image">         
+            <a href="#">
+              <img class="image-song" src="https://images3.alphacoders.com/641/641481.jpg" alt="Canción de Friends">
+            </a>
+          </div>
+        </article>  
+        <article class="image-listing">
+          <a class="image-title" href="https://youtu.be/u2LHg_LuNEE" target="_blank">Harry Potter</a>
+          <div class="location-image">         
+            <a href="#">
+              <img class="image-song" src="https://www.gratistodo.com/wp-content/uploads/2016/11/Harry-Potter-y-las-reliquias-de-la-muerte-1.jpg" alt="Canción de Harry Potter">
+            </a>
+          </div>
+        </article> 
+        <article class="image-listing">
+          <a class="image-title" href="https://youtu.be/chM8rVWWkAM" target="_blank">Mamma Mia</a>
+          <div class="location-image">         
+            <a href="#">
+              <img class="image-song" src="https://www.ecranlarge.com/media/cache/1600x1200/uploads/image/001/257/2goindrp8owspepcjubew2dbdh9-594.jpg" alt="Canción de Mamma Mia">
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="tutorials">
+      <h2 class="title-songs">Tutoriales</h2>
+    </section>
+  </main>
+</body>
+<script src="../js/main.js"></script>
 </html>
