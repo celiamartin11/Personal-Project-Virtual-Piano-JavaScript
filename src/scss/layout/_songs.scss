@@ -1,0 +1,83 @@
+.songs{
+    background-color: black;
+    color: white;
+    width: 98.9vw;
+    height: 100vh;
+}
+
+.title-songs{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.form-song{
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.select-song{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 5px 8px;
+}
+
+.image-container {
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    align-content: center;
+    justify-content: center;
+    column-gap: 50px;
+}
+
+.image-listing {
+    position: relative;
+    margin-top: 75px;
+}
+
+.image-title {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    text-decoration: none;
+    z-index: 1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: opacity .2s;
+    background: rgba(90,0,10,0.4);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.location-image {
+    background-color: red;
+    overflow: hidden;
+    width: 300px;
+    height: 25vh;
+}
+  
+.image-song {
+    filter: blur(0px);
+    transition: filter 0.3s ease-in;
+    transform: scale(1.1);
+    width: 300px;
+    height: 25vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+.image-listing:hover .image-title {
+    opacity: 1;
+}
+  
+.image-listing:hover .location-image img {
+    filter: blur(2px);
+}
