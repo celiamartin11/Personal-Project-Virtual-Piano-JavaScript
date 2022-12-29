@@ -30,7 +30,7 @@
     "dist": "docs/assets/js/"
   },
   "images": {
-    "src": "src/images/**/*.{gif,jpg,jpeg,JPG,JPEG,png,svg, mp3}",
+    "src": "src/images/**/*",
     "dest": "public/assets/images/",
     "dist": "docs/assets/images/"
   },

@@ -312,14 +312,15 @@ label {
 
 .image-container {
     display: grid;
-    grid-template-columns: 350px 350px 350px 350px;
-    margin-left: 80px;
-    margin-top: 50px;
+    grid-template-columns: 300px 300px 300px 300px;
+    align-content: center;
+    justify-content: center;
+    column-gap: 50px;
 }
 
 .image-listing {
     position: relative;
-    margin-top: 40px;
+    margin-top: 100px;
 }
 
 .image-title {
@@ -329,9 +330,9 @@ label {
     z-index: 1;
     position: absolute;
     height: 100%;
-    width:83%;
+    width: 100%;
     opacity: 0;
-    transition: opacity .4s;
+    transition: opacity .2s;
     background: rgba(90,0,10,0.4);
     color: white;
     display: flex;
@@ -342,7 +343,7 @@ label {
 .location-image {
     background-color: red;
     overflow: hidden;
-    width: 18.9vw;
+    width: 300px;
     height: 25vh;
 }
   
@@ -350,9 +351,10 @@ label {
     filter: blur(0px);
     transition: filter 0.3s ease-in;
     transform: scale(1.1);
-    width: 18.9vw;
+    width: 300px;
     height: 25vh;
     object-fit: cover;
+    object-position: center;
 }
 
 .image-listing:hover .image-title {
