@@ -325,7 +325,7 @@ label {
 
 .image-listing {
     position: relative;
-    margin-top: 100px;
+    margin-top: 75px;
 }
 
 .image-title {
@@ -378,34 +378,5 @@ label {
     color: black;
     width: 98.9vw;
     height: 100vh;
-}
-
-.tutorial-container{
-    display: flex;
-    flex-direction: column;
-}
-
-.tutorial-contain{
-    display: flex;
-    flex-direction: row; 
-}
-
-.tutorial-image{
-    width: 220px;
-    margin-top: 20px;
-    margin-left: 100px;
-}
-
-.tutorial-title{
-    font-family:'Courier New', Courier, monospace;
-    font-weight: bold;
-    font-size: 20px;
-    margin-top: 30px;
-    margin-left: 30px;
-}
-
-.tutorial-description{
-    font-family:'Courier New', Courier, monospace;
-    font-size: 14px;
 }
 
