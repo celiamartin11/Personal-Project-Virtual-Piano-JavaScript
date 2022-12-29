@@ -14,39 +14,38 @@
     <h1 class="title">Piano Virtual</h1>
     <nav>
       <ul class="menu">
-        <li class="option">Inicio</li>
-        <li class="option">Piano</li>
-        <li class="option">Canciones</li>
-        <li class="option">Tutoriales</li>
+        <li class="option" href="">Inicio</li>
+        <li class="option" href="">Canciones</li>
+        <li class="option" href="">Tutoriales</li>
       </ul>
     </nav>
   </header>
   <main class="contain">
     <div class="container">
-      <button class="white-key">Do</button>
-      <button class="black-key1">Do# Reb</button>
-      <button class="white-key">Re</button>
-      <button class="black-key2">Re# Mib</button>
-      <button class="white-key">Mi</button>
-      <button class="white-key">Fa</button>
-      <button class="black-key3">Fa# Solb</button>
-      <button class="white-key">Sol</button>
-      <button class="black-key4">Sol# Lab</button>
-      <button class="white-key">La</button>
-      <button class="black-key5">La# Sib</button>
-      <button class="white-key">Si</button>
-      <button class="white-key">Do</button>
-      <button class="black-key6">Do# Reb</button>
-      <button class="white-key">Re</button>
-      <button class="black-key7">Re# Mib</button>
-      <button class="white-key">Mi</button>
-      <button class="white-key">Fa</button>
-      <button class="black-key8">Fa# Solb</button>
-      <button class="white-key">Sol</button>
-      <button class="black-key9">Sol# Lab</button>
-      <button class="white-key">La</button>
-      <button class="black-key10">La# Sib</button>
-      <button class="white-key">Si</button>
+      <button class="js-key white-key" name="Do1">Do</button>
+      <button class="js-key black-key1" name="DoReb1">Do# Reb</button>
+      <button class="js-key white-key" name="Re1">Re</button>
+      <button class="js-key black-key2" name="ReMib1">Re# Mib</button>
+      <button class="js-key white-key" name="Mi1">Mi</button>
+      <button class="js-key white-key" name="Fa1">Fa</button>
+      <button class="js-key black-key3" name="FaSolb1">Fa# Solb</button>
+      <button class="js-key white-key" name="Sol1">Sol</button>
+      <button class="js-key black-key4" name="SolLab1">Sol# Lab</button>
+      <button class="js-key white-key" name="La1">La</button>
+      <button class="js-key black-key5" name="LaSib1">La# Sib</button>
+      <button class="js-key white-key" name="Si1">Si</button>
+      <button class="js-key white-key" name="Do2">Do</button>
+      <button class="js-key black-key6" name="DoReb2">Do# Reb</button>
+      <button class="js-key white-key" name="Re2">Re</button>
+      <button class="js-key black-key7" name="ReMib2">Re# Mib</button>
+      <button class="js-key white-key" name="Mi2">Mi</button>
+      <button class="js-key white-key" name="Fa2">Fa</button>
+      <button class="js-key black-key8" name="FaSolb2">Fa# Solb</button>
+      <button class="js-key white-key" name="Sol2">Sol</button>
+      <button class="js-key black-key9" name="SolLab2">Sol# Lab</button>
+      <button class="js-key white-key" name="La2">La</button>
+      <button class="js-key black-key10" name="LaSib2">La# Sib</button>
+      <button class="js-key white-key" name="Si2">Si</button>
     </div>
     <div class="btn-container">
       <i class="fa fa-keyboard-o" aria-hidden="true"></i>
@@ -62,9 +61,10 @@
     <section class="songs">
       <h2 class="title-songs">Canciones</h2>
       <form class="form-song">
-        <select class="select-song">
+        <select class="select-song js-filter-songs">
           <option>Elige una temática</option>
-          <option>Clásicas</option>
+          <option>Películas</option>
+          <option>Series</option>
           <option>Disney</option>
           <option>Navidad</option>
         </select>
@@ -136,6 +136,36 @@
         </article>
       </div>
     </section>
+    <section class="tutorials">
+      <h2 class="title-songs">Tutoriales</h2>     
+      <!--<div class="tutorial-container">
+        <article class="tutorial-contain">
+          <a href="">
+            <img class="tutorial-image" src="https://www.superprof.es/blog/wp-content/uploads/2016/10/aprender-piano-madrid.jpg" alt="Posición de manos">
+          </a>
+            <h2 class="tutorial-title">Posición de manos</h2>
+        </article>
+        <article class="tutorial-contain">
+          <a href="">
+            <img class="tutorial-image" src="https://w0.peakpx.com/wallpaper/589/269/HD-wallpaper-music-note-on-brown-piano.jpg" alt="Reconocimiento de notas">
+          </a>
+            <h2 class="tutorial-title">Reconocimiento de notas</h2>
+        </article>
+        <article class="tutorial-contain">
+          <a href="">
+            <img class="tutorial-image" src="https://cdn.pixabay.com/photo/2016/10/09/18/49/piano-1726569_960_720.jpg" alt="Técnicas y trucos">
+          </a>
+            <h2 class="tutorial-title">Técnicas y trucos</h2>
+        </article>
+        <article class="tutorial-contain">
+          <a href="">
+            <img class="tutorial-image" src="https://www.roland.com/RolandComSite/media/us/images/articles/skoove_lessons_header.jpg" alt="Cursos para principiantes">
+          </a>
+            <h2 class="tutorial-title">Cursos para principiantes</h2>
+        </article>
+      </div>-->
+  </section>
   </main>
+  <script src="./assets/js/main.js"></script>
 </body>
 </html>

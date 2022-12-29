@@ -35,6 +35,7 @@ header{
     margin-right: 40px;
     padding: 12px;
     display: flex;  
+    cursor: pointer;
 }
 
 .option:hover{
@@ -62,6 +63,7 @@ header{
     height: 34vh;
     border: 1px solid black;
     position: relative;
+    cursor: pointer;
 }
 
 .white-key:hover{
@@ -78,6 +80,7 @@ header{
     color: white;
     z-index: 1;
     -webkit-box-shadow: 0px 10px 12px 0px rgba(78, 78, 78, 0.75);
+    cursor: pointer;
 }
 
 .black-key2{
@@ -166,17 +169,6 @@ header{
     background-color: grey;
 }
 
-.button-container{
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 15px;
-    font-weight: bold;
-    background-color: white;
-    color: black;
-    border-width: 1px;
-    margin-top: 40px;
-    padding: 5px 10px 5px 10px;
-}
-
 .hands-image{
     margin-top: 5px;
     height: 40vh;
@@ -220,6 +212,7 @@ label {
     position: relative;
     transition: all 0.3s ease;
     display: block;
+    cursor: pointer;
 }
 
 .btn-color-mode-switch > label.btn-color-mode-switch-inner:before{
@@ -322,7 +315,6 @@ label {
     grid-template-columns: 350px 350px 350px 350px;
     margin-left: 80px;
     margin-top: 50px;
-    width: 46vw;
 }
 
 .image-listing {
@@ -337,9 +329,9 @@ label {
     z-index: 1;
     position: absolute;
     height: 100%;
-    width: 83.2%;
+    width:83%;
     opacity: 0;
-    transition: opacity .5s;
+    transition: opacity .4s;
     background: rgba(90,0,10,0.4);
     color: white;
     display: flex;
@@ -361,7 +353,6 @@ label {
     width: 18.9vw;
     height: 25vh;
     object-fit: cover;
-    
 }
 
 .image-listing:hover .image-title {
@@ -371,4 +362,43 @@ label {
 .image-listing:hover .location-image img {
     filter: blur(2px);
 }
-  
+
+
+/*Tutorials*/
+
+.tutorials{
+    background-color: white;
+    color: black;
+    width: 98.9vw;
+    height: 100vh;
+}
+
+.tutorial-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.tutorial-contain{
+    display: flex;
+    flex-direction: row; 
+}
+
+.tutorial-image{
+    width: 220px;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+
+.tutorial-title{
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.tutorial-description{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 14px;
+}
+
