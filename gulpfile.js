@@ -78,6 +78,14 @@ gulp.task('images', done => {
   done();
 });
 
+gulp.task('audio', done => {
+  gulp
+    .src(config.audio.src)
+    .pipe(plumber({ errorHandler: notify.onError('Error: <%= error.message %>') }))
+    .pipe(gulp.dest(config.audio.dest));
+  done();
+});
+
 gulp.task('js', done => {
   gulp
     .src(config.js.src)
@@ -108,15 +116,23 @@ gulp.task('images-dist', done => {
   done();
 });
 
+gulp.task('audio-dist', done => {
+  gulp
+    .src(config.audio.src)
+    .pipe(plumber({ errorHandler: notify.onError('Error: <%= error.message %>') }))
+    .pipe(gulp.dest(config.audio.dist));
+  done();
+});
 // main tasks
 
 gulp.task(
   'default',
-  gulp.series(['clean', 'api', 'html', 'css', 'js', 'images'], done => {
+  gulp.series(['clean', 'api', 'html', 'css', 'js', 'images', 'audio'], done => {
     browserSync.init({ server: { baseDir: './public/' } });
     gulp.watch(config.api.src, gulp.series(['api', 'bs-reload']));
     gulp.watch(config.css.src, gulp.series('css'));
     gulp.watch(config.images.src, gulp.series(['images', 'bs-reload']));
+    gulp.watch(config.audio.src, gulp.series(['audio', 'bs-reload']));
     gulp.watch(config.js.src, gulp.series(['js', 'bs-reload']));
     gulp.watch(config.watch.html, gulp.series(['html', 'bs-reload']));
     done();
@@ -132,7 +148,8 @@ gulp.task(
       'css-dist',
       'html-dist',
       'js-dist',
-      'images-dist'
+      'images-dist',
+      'audio-dist'
       // 'icons-dist'
     ],
     done => done()
