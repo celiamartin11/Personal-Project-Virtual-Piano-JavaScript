@@ -7,7 +7,6 @@ for(const keyButton of allKeyButtons) {
 }
 
 function clickOnKeyButton(event) {
-  console.log(event.currentTarget.name);
   if(event.currentTarget.name === 'Do1') {
     const audioDo1 = new Audio('./assets/audio/do1.mp3');
     audioDo1.play();
